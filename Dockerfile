@@ -57,7 +57,7 @@ RUN chmod u+x /run.sh
 ENV PUBLICHOST localhost
 
 # couple available volumes you may want to use
-VOLUME ["/home/ftpusers", "/etc/pure-ftpd/passwd"]
+#VOLUME ["/home/ftpusers", "/etc/pure-ftpd/passwd"]
 
 # startup
 CMD /run.sh -c 5 -C 5 -l puredb:/etc/pure-ftpd/pureftpd.pdb -E -j -R -P $PUBLICHOST -p 30000:30009
